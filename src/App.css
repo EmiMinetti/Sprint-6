@@ -1,0 +1,303 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* HEADER */
+
+.sunHero{
+    width: 100%;
+    background-color: hsl(236, 33%, 92%) ;
+    background-image: url(Images/bgDesktopLight.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.moonHero{
+    width: 100%;
+    background-color: hsl(235, 21%, 11%);
+    background-image: url(Images/bg-desktop-dark.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.contenHero{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    padding: 30px 0px;
+}
+
+.textAndMoon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textTodo{
+    height: 31px;
+    font-size: 40px;
+    color: hsl(0, 0%, 98%);
+    margin: 0px;
+    padding: 0px;
+}
+
+.lunaHero{
+    width: 40px;
+}
+
+.buttHero{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+}
+
+.fullStack{
+    text-align: center;
+}
+
+.sunInput{
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.moonInput{
+    width: 100%;
+    height: 65px;
+    background-color: hsl(235, 24%, 19%);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.inputText{
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 80%;
+    background-color: transparent;
+    color: gray;
+}
+
+.inputText::placeholder{
+    color: gray;
+    font-size: 16px;
+}
+
+.checkInput{
+    appearance: none;
+    margin-left: 20px;
+    cursor: alias;
+    width: 25px;
+    height: 25px;
+    border: 2px solid gray;
+    border-radius: 20px;
+}
+
+.checkInput:checked{
+    background: blue;
+    background-image: url(/public/Images/icon-check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.pieTodo{
+    color: gray;
+}
+
+a{
+    color:gray;
+}
+
+.tareaStsun{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+}
+
+.tareaStCompletedsun{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.507);
+}
+
+.tareaStmoon{
+    display: flex;
+    background-color: hsl(235, 24%, 19%);
+    align-items: center;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+}
+
+.tareaStCompletedmoon{
+    display: flex;
+    background-color: hsl(235, 24%, 19%);
+    align-items: center;
+    border-bottom: 1px solid gray;
+    justify-content: space-between;
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.507);
+}
+
+.listaStsun{
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color: white;
+}
+
+.listaStmoon{
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color:   hsl(235, 24%, 19%);
+    color: gray;
+
+}
+
+.pieLista{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-evenly;
+}
+
+.centroPie{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.imgtarea {
+    width: 50px;
+}
+
+.btnCentroPie{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.btnTarea{
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+}
+
+.divTarea{
+    display: flex;
+    align-items: center;
+}
+
+.contenidoTarea{
+    margin-left: 10px;
+}
+
+.active{
+    color: blue;
+}
+
+@media screen and (max-width: 375px) {
+.sunHero{
+    background-image: url(Images/bg-mobile-light.jpg);
+}
+   
+.moonHero{
+    background-image: url(Images/bg-mobile-dark.jpg);
+}
+
+.contenHero{
+    width: 90%;
+    gap:20px;
+    padding: 30px 0px 0px 0px;
+}
+
+.textTodo{
+    font-size: 25px;
+}
+
+.textAndMoon{
+    align-items: start;
+}
+
+.buttHero{
+    display: flex;
+    align-items: center;
+}
+
+.lunaHero{
+    width: 20px;
+    margin-bottom: 15px;
+}
+
+.moonInput{
+    height: 45px;
+    margin-bottom: 15px;
+}
+
+.sunInput{
+    height: 45px;
+}
+
+.checkInput{
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.inputText{
+    padding-left: 15px;
+}
+
+.pieTodo{
+    font-size: 10px;
+}
+
+.listaStmoon{
+    padding: 5px 0px;
+}
+
+.listaStsun{
+    padding: 5px 0px;
+}
+
+.contenidoTarea{
+    margin: 10px 0px 10px 10px;
+}
+
+.pieLista{
+    font-size: 10px;
+}
+
+.centroPie{
+    gap: 5px;
+}
+
+}
